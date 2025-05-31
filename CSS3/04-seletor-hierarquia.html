@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid blueviolet;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        /* Seleciona todas as divs que são descendentes (não necessariamente filhas diretas) de outra div. */
+        div div {
+            color: tomato;
+        }
+
+        /* Pega todos os span que são filhos DIRETO da div */
+        div > p {
+            color: blue ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="pai">
+        Texto na tag pai
+        <div class="filho1">Texto na tag filho 1</div>
+        <div class="filho2">
+            <p> neto </p>
+        </div>
+        <div class="filho3">Texto na tag filho 3</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #titulo1 {
+            color: brown;
+        }
+        #titulo1 {
+            color: blue;  /* Aprendi que, em CSS, quanto mais abaixo um seletor estiver no arquivo,
+            maior será sua precedência —
+            ou seja, ele pode sobrescrever estilos definidos anteriormente. */
+        }
+
+        h4 {
+            color: green;
+        }
+
+        h5 {
+            color: green;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Olá Mundo!!</h4>
+    <h4 id="titulo1">Olá Mundo!!</h4>
+    <h4>Olá Pessoal!!</h4>
+    <h5>Olá Pessoal!!</h5>
+    <div>
+        <h4>Aqui tem outro conteudo</h4>
+    </div>
+</body>
+
+</html>
